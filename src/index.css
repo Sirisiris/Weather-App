@@ -5,14 +5,14 @@
 }
 
 body {
-  font-family: "montserrat", sans-serif;
+  font-family: "FreeMono", monospace;
 }
 
 .app {
   background-image: url('./assets/cold-bg.jpg');
   background-size: cover;
   background-position: bottom;
-  transition: 0.4 ease-out;
+  transition: 0.4s ease-out;
 }
 
 .app.warm {
@@ -21,46 +21,50 @@ body {
 
 main {
   min-height:  100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.15));
   padding: 25px;
 }
 
 .search-box {
   width: 100%;
   margin: 0 0 75px;
+  display: flex;
+  justify-content: space-around;
+  padding:  3%;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  margin-top: 25px;
+
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.6s ease-out;
 }
 
 .search-box .search-bar {
-  display: block;
-  width: 100%;
-  padding:  15px;
-
   appearance: none;
   background: none;
   border: none;
   outline: none;
 
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 0px 0px 16px 16px;
-  margin-top: -25px;
-
-
-  color: #313131;
-  font-size: 20px;
-
-  transition: 0.4 ease;
+  font-family: "FreeMono", monospace;
+  font-size: 18px;
 }
 
-.search-box, .search-bar:focus {
+.search-box:hover {
   background-color: rgba(255, 255, 255, 0.75);
+  transition: 0.6s ease-out;
 }
 
 .location-box .location {
   color: #fff;
-  font-size: 32 px;
+  font-size: 35px;
   font-weight: 500;
   text-align: center;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  line-height : 55px;
+  
 }
 
 .location-box .date {
@@ -80,8 +84,8 @@ main {
   position: relative;
   display: inline-block;
   margin: 30px auto;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 40px;
 
   padding: 15px 25px;
 
@@ -89,7 +93,7 @@ main {
   font-size: 102px;
   font-weight: 900;
 
-  text-shadow: 3px 6px rbga(50, 50, 70, 0.5);
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
   text-align: center;
   box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
