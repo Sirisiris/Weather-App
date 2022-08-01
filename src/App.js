@@ -63,7 +63,7 @@ function App() {
           value={query}
           onKeyPress={search}
           />
-          <img src={searchIcon} alt="Search"/>
+          <img src={searchIcon} alt="Search" width="18rem" height="18rem"/>
         </div>
         {(typeof weather.main != "undefined") ? (
           <div>
